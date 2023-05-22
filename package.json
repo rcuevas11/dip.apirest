@@ -1,0 +1,28 @@
+{
+  "name": "dip.apirest",
+  "version": "1.0.0",
+  "description": "API REST TRABAJO FINAL",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcuevas11/dip.apirest.git"
+  },
+  "author": "Rolando Cuevas Gutierrez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg": "^8.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rcuevas11/dip.apirest/issues"
+  },
+  "homepage": "https://github.com/rcuevas11/dip.apirest#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

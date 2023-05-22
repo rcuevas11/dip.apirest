@@ -1,0 +1,41 @@
+@host = http://localhost:4000
+
+### FIND ALL
+GET {{host}}/usuarios HTTP/1.1
+content-type: application/json
+
+### FIND BY ID
+GET {{host}}/usuarios/1 HTTP/1.1
+content-type: application/json
+
+### CREATE
+POST {{host}}/usuarios HTTP/1.1
+content-type: application/json
+
+{
+    "cedula_identidad": "1234567",
+    "nombre": "Juan",
+    "primer_apellido": "Perez",
+    "segundo_apellido": "Paredes",
+    "fecha_nacimiento": "03-05-1998"
+}
+
+### UPDATE
+PUT {{host}}/usuarios/2 HTTP/1.1
+content-type: application/json
+
+{
+    "cedula_identidad": "1234567",
+    "nombre": "Juan Update",
+    "primer_apellido": "Perez Update",
+    "segundo_apellido": "Paredes Update",
+    "fecha_nacimiento": "03-05-1990"
+}
+
+### PROMEDIO
+GET {{host}}/usuarios/promedio-edad HTTP/1.1
+content-type: application/json
+
+### ESTADO
+GET {{host}}/estado HTTP/1.1
+content-type: application/json
